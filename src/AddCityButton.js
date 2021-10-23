@@ -16,10 +16,11 @@ const AddCityButton = (props) => {
                 headers: {
                     "x-rapidapi-host":
                         "community-open-weather-map.p.rapidapi.com",
-                    "X-RapidAPI-Key": ``,
+                    "x-rapidapi-key": ``,
                 },
             }
         )
+
             .then((res) => {
                 if (res.status !== 200) throw new Error();
                 return res.json();
